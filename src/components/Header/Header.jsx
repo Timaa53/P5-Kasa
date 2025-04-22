@@ -9,7 +9,7 @@ function Header() {
             <nav>
                 <ul className="nav-list">
                     <li> <NavLink to="/" className={({isActive}) => isActive ? "active" : ""}>Accueil</NavLink> </li>
-                    <li> <NavLink to="about" className={({isActive}) => isActive ? "active" : ""}>A propos</NavLink> </li>
+                    <li> <NavLink to="/about" className={({isActive}) => isActive ? "active" : ""}>A propos</NavLink> </li>
                 </ul>
             </nav>
         </header>
