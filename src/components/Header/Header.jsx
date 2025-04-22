@@ -1,4 +1,4 @@
-import './Header.css'
+import './Header.sass'
 import {NavLink} from 'react-router-dom'
 import KasaLogo from './KasaLogo/KasaLogo'
 
