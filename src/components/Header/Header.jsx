@@ -1,5 +1,5 @@
 import './Header.css'
-import {Link} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 import KasaLogo from './KasaLogo/KasaLogo'
 
 function Header() {
@@ -7,9 +7,9 @@ function Header() {
         <header className="header">
             <KasaLogo />
             <nav>
-                <ul>
-                    <li> <Link to="/">Accueil</Link> </li>
-                    <li> <Link to="about">A propos</Link> </li>
+                <ul className="nav-list">
+                    <li> <NavLink to="/" className={({isActive}) => isActive ? "active" : ""}>Accueil</NavLink> </li>
+                    <li> <NavLink to="about" className={({isActive}) => isActive ? "active" : ""}>A propos</NavLink> </li>
                 </ul>
             </nav>
         </header>
