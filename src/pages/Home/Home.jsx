@@ -1,7 +1,7 @@
 import Header from '../../components/Header/Header'
 import Footer from '../../components/Footer/Footer'
 import Banner from '../../components/Main/Banner/Banner'
-import Logements from '../../components/Main/Logements/Logements'
+import Gallery from '../../components/Main/LogementGallery/LogementGallery'
 
 function Home() {
     return (
@@ -10,7 +10,7 @@ function Home() {
         <main className="homepage-content">
             <Banner />
             <div className="gallery">
-            <Logements />
+                <Gallery />
             </div>
         </main>
         <Footer />
