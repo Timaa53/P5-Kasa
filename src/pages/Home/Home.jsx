@@ -9,9 +9,7 @@ function Home() {
         <Header />
         <main className="homepage-content">
             <Banner />
-            <div className="gallery">
-                <Gallery />
-            </div>
+            <Gallery />
         </main>
         <Footer />
         </>
