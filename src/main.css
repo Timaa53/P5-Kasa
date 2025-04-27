@@ -137,6 +137,21 @@ a:hover .logo {
   gap: 30px;
 }
 
+.section {
+  background-color: #FF6060;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 52px;
+  font-size: 24px;
+  text-align: left;
+  text-indent: 20px;
+}
+
 .footer {
   background-color: black;
   color: white;
@@ -163,7 +178,6 @@ a:hover .logo {
   font-weight: 500;
   width: auto;
   height: 46px;
-  font-family: montserra sans-serif;
 }
 
 .gallery {
@@ -178,6 +192,16 @@ a:hover .logo {
 
 .aboutpage-content {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+}
+
+.about-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 0 108px;
 }
 
 :root {
@@ -212,6 +236,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  font-family: Montserrat, sans-serif;
 }
 
 h1 {
