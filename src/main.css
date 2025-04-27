@@ -82,16 +82,14 @@ a:hover .logo {
   width: 100%;
   position: relative;
 }
-
-.banner-logo {
+.banner .banner-img {
   width: 100%;
   height: 223px;
   object-fit: cover;
   filter: brightness(60%);
   border-radius: 25px;
 }
-
-.banner-text {
+.banner .banner-text {
   position: absolute;
   width: 100%;
   color: white;
@@ -175,6 +173,10 @@ a:hover .logo {
 }
 
 .homepage-content {
+  width: 100%;
+}
+
+.aboutpage-content {
   width: 100%;
 }
 

@@ -8,7 +8,7 @@ function Home() {
         <>
         <Header />
         <main className="homepage-content">
-            <Banner />
+            <Banner image="../../../src/assets/images/Banner_home.png" textBanner={true} />
             <Gallery />
         </main>
         <Footer />
