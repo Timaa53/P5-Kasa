@@ -99,6 +99,19 @@ a:hover .logo {
   text-shadow: 1px 0 0 black, -1px 0 0 black, 0 1px 0 black, 0 -1px 0 black, 1px 1px 0 black, -1px 1px 0 black, 1px -1px 0 black, -1px -1px 0 black, 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.collapse-changer {
+  width: 32px;
+  height: 32px;
+}
+.collapse-changer .collapse-button {
+  all: unset;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
 .logement-card {
   position: relative;
   width: 340px;
@@ -143,13 +156,14 @@ a:hover .logo {
   font-weight: bold;
   border-radius: 5px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
   height: 52px;
   font-size: 24px;
   text-align: left;
-  text-indent: 20px;
+  padding: 0 20px 0 15px;
+  box-sizing: border-box;
 }
 
 .footer {
