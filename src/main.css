@@ -144,9 +144,14 @@ a:hover .logo {
   justify-content: center;
   align-items: center;
   background-color: transparent;
+  all: unset;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
 }
-.collapse-button img {
-  background-color: green;
+.collapse-button:focus {
+  outline: none;
 }
 
 .footer {
@@ -209,22 +214,32 @@ a:hover .logo {
 .section-bar {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  background-color: #FF6060;
+  border-radius: 5px;
+  height: 54px;
+  padding: 0 20px 0 15px;
+  box-sizing: border-box;
 }
 
 .section-title {
   width: 100%;
-  border-radius: 5px;
-  background-color: #FF6060;
   color: white;
   font-weight: bold;
   display: flex;
   align-items: center;
-  height: 54px;
   font-size: 24px;
-  padding: 0 20px 0 15px;
+}
+
+.collapse-text {
+  width: 100%;
+  margin: 0;
+  padding: 20px;
+  font-size: 18px;
   box-sizing: border-box;
+  background-color: #f6f6f6;
+  border-radius: 5px;
 }
 
 :root {
