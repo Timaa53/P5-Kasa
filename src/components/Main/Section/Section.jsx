@@ -1,20 +1,22 @@
-import Collapse from '../Collapse/Collapse'
+import { useState } from 'react'
+import CloseCollapse from '../../../assets/images/Collapses/closed_collapse.png'
+import OpenCollapse from '../../../assets/images/Collapses/open_collapse.png'
 
-function Section ({sectionName}) {
-    const sectionsTexts = {
-        Fiabilité: "Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.",
-        Respect: "La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.",
-        Service: "La qualité du service est au cœur de notre engagement chez Kasa. Nous veillons à ce que chaque interaction, que ce soit avec nos hôtes ou nos locataires, soit empreinte de respect et de bienveillance",
-        Sécurité: "La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes."
-    };
+function Section ({sectionName, children}) {
+    const [isOpen, setIsOpen] = useState(false);
+    const CollapseChanger = () => setIsOpen(!isOpen);
 
     return(
-        <section className="section">{sectionName}
-            <Collapse>
-            {sectionsTexts[sectionName]}
-            </Collapse>
+        <section className="section">
+            <div className="section-bar">
+                <p className="section-title">{sectionName}</p>
+                <button className="collapse-button" onClick={CollapseChanger}>
+                    <img src={isOpen ? OpenCollapse : CloseCollapse} alt="Bouton détails" />
+                </button>
+            </div>
+            {isOpen && children}
         </section>
-    )
+    );
 }
 
 export default Section
