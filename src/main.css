@@ -144,11 +144,8 @@ a:hover .logo {
   justify-content: center;
   align-items: center;
   background-color: transparent;
-  all: unset;
   cursor: pointer;
   border: none;
-  outline: none;
-  background: none;
 }
 .collapse-button:focus {
   outline: none;
