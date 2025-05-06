@@ -1,8 +1,8 @@
-function Banner({image, textBanner=true}) {
+function Banner({image, textBanner}) {
     return(
         <div className="banner">
         <img src={image} alt="Image Bannière Kasa" className="banner-img" />
-        {textBanner && (<h1 className="banner-text">Chez vous, partout et ailleurs</h1>)}
+        <h1 className="banner-text">{textBanner}</h1>
         </div>
     )
 }

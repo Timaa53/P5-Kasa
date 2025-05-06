@@ -7,8 +7,8 @@ function Error404() {
         <>
             <Header />
             <main className="error-page-main">
-                <p className="error-number">404</p>
-                <h1 className="error-text">Oups! La page que vous demandez n'existe pas.</h1>
+                <h1 className="error-number">404</h1>
+                <p className="error-text">Oups! La page que vous demandez n'existe pas.</p>
                 <p className="homePage-return">
                     <NavLink to="/">Retourner à la page d'accueil</NavLink>
                 </p>    
