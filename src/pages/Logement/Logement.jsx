@@ -12,9 +12,9 @@ function Logements() {
             <main>
                 <section className="carousel">
                     <Carousel logementId={id}>
-                        <div className="carousel-img"></div>
-                        <div className="carousel-btn"></div>
-                        <div className="carousel-counter"></div>
+                        {/* <div className="carousel-img"></div> */}
+                        {/* <div className="carousel-btn"></div> */}
+                        {/* <div className="carousel-counter"></div> */}
                     </Carousel>
                 </section>
                 <h1>Test page logements</h1>   

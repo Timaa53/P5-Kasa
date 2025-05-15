@@ -151,6 +151,23 @@ a:hover .logo {
   gap: 30px;
 }
 
+.carousel-img {
+  width: 1240px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.carousel-img img {
+  width: 100%;
+  height: 100%;
+  transition: opacity 1s ease-in-out;
+  opacity: 1;
+}
+
+.carousel-btn {
+  display: flex;
+}
+
 .footer {
   background-color: black;
   color: white;
@@ -237,6 +254,11 @@ a:hover .logo {
   box-sizing: border-box;
   background-color: #f6f6f6;
   border-radius: 5px;
+}
+
+.carousel {
+  width: 100%;
+  height: 415px;
 }
 
 .error-page-main {
