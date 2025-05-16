@@ -180,10 +180,13 @@ a:hover .logo {
   background-color: transparent;
   display: flex;
   justify-content: center;
+  border: none;
+  outline: none;
 }
-.carousel-btn button:hover {
+.carousel-btn button:hover, .carousel-btn button:focus-visible, .carousel-btn button:focus {
   background-color: transparent;
   border: none;
+  outline: none;
 }
 
 .carousel-btn button img {
