@@ -5,16 +5,14 @@ import LogementsData from '../LogementsData'
 
 function Carousel({logementId}) {
     const [logementImg, setLogementImg] = useState([]);
-    const setLogementData = useCallback((data) => {
-        setLogementImg(data);
-    }, []);
+    const setLogementData = useCallback((data) => {setLogementImg(data);}, []);
     const [currentIndex, setCurrentIndex] = useState(0);
 
     return(
         <>
             <div className="carousel-content">
                 <LogementsData 
-                extractData={["id", "title", "pictures"]}
+                extractData={["id", "title", "pictures"]} //voir si title utilisé, sinon supprimer
                 logementId={logementId}
                 logementsDataFiltered={setLogementData}
                 />
@@ -34,12 +32,8 @@ function Carousel({logementId}) {
                 <CarouselCounter
                 currentIndex={currentIndex}
                 carouselImages={logementImg[0]?.pictures.length}
-            />
-            </div>
-            
-            
-
-            
+                />
+            </div>            
         </>
     )
 }
