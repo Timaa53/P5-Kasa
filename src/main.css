@@ -151,21 +151,52 @@ a:hover .logo {
   gap: 30px;
 }
 
-.carousel-img {
+.carousel-content {
   width: 1240px;
   height: 100%;
   overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
 }
 
-.carousel-img img {
+.carousel-content img {
   width: 100%;
   height: 100%;
-  transition: opacity 1s ease-in-out;
-  opacity: 1;
 }
 
 .carousel-btn {
   display: flex;
+  justify-content: space-between;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 35%;
+}
+
+.carousel-btn button {
+  width: 96px;
+  height: 120px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+}
+.carousel-btn button:hover {
+  background-color: transparent;
+  border: none;
+}
+
+.carousel-btn button img {
+  width: 94px;
+}
+
+.carousel-counter {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  width: 100%;
 }
 
 .footer {

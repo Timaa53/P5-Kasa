@@ -1,5 +1,5 @@
 import Header from '../../components/Header/Header'
-import Carousel from '../../components/Main/Logements/Carousel'
+import Carousel from '../../components/Main/Logements/Carousel/Carousel'
 import Footer from '../../components/Footer/Footer'
 import { useParams } from 'react-router'
 
