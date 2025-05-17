@@ -1,8 +1,9 @@
 import Header from '../../components/Header/Header'
 import Carousel from '../../components/Main/Logements/Carousel/Carousel'
-import ListingHeader from '../../components/Main/Logements/ListingHeader/ListingHeader'
+import ListingTitle from '../../components/Main/Logements/ListingHeader/ListingTitle'
+import ListingHoster from '../../components/Main/Logements/ListingHeader/ListingHoster'
 import Footer from '../../components/Footer/Footer'
-import { useParams } from 'react-router'
+import {useParams} from 'react-router'
 
 function Logements() {
     const {id} = useParams();
@@ -16,7 +17,14 @@ function Logements() {
                 </section>
 
                 <section className="listing-header">
-                    <ListingHeader logementId={id} />
+                    <div className="listing-title-hoster">
+                        <ListingTitle logementId={id} />
+                        <ListingHoster logementId={id} />
+                    </div>
+                    <div className="listing-tags-rating">
+                        {/* sqdqsdqsdqs */}
+                        {/* sqdqsdqsdqs */}
+                    </div>
                 </section>
                 
                 <h1>Test page logements</h1>   

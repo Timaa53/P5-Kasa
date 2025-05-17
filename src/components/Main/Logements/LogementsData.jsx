@@ -27,11 +27,3 @@ function LogementsData({extractData = [], logementId, logementsDataFiltered}) {
 }
 
 export default LogementsData
-
-// if (extractData.includes("pictures")) {
-//           setDataLogements(selected.pictures); // Tableau d'images
-//           if (logementsDataFiltered) logementsDataFiltered(selected.pictures);
-//         } else {
-//           setDataLogements([selected]); // Tableau objet
-//           if (logementsDataFiltered) logementsDataFiltered(selected);
-//         }
