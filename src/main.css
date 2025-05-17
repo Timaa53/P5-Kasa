@@ -202,6 +202,64 @@ a:hover .logo {
   width: 100%;
 }
 
+.title-location {
+  text-align: left;
+  height: 77px;
+}
+
+.listingHeader-title {
+  height: 51px;
+  margin: 0;
+  color: #FF6060;
+}
+
+.listingHeader-location {
+  height: 26px;
+  margin: 0;
+  font-size: 18px;
+}
+
+.listingHoster {
+  display: flex;
+  height: 64px;
+}
+
+.listingHoster-name {
+  margin: 0 10px 0 0;
+  font-size: 18px;
+  width: 93px;
+  color: #FF6060;
+  text-align: right;
+}
+
+.listingHoster-img {
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  object-position: center;
+}
+
+.logement-tags {
+  display: flex;
+  gap: 10px;
+  max-width: 582px;
+}
+
+.logement-tags p {
+  min-width: 115px;
+  background-color: #FF6060;
+  color: white;
+  border-radius: 10px;
+  width: auto;
+  font-size: 14px;
+  font-weight: bold;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px 0 10px;
+}
+
 .footer {
   background-color: black;
   color: white;
@@ -293,10 +351,12 @@ a:hover .logo {
 .carousel {
   width: 100%;
   height: 415px;
+  margin-bottom: 20px;
 }
 
-.listing-header {
-  height: 100px;
+.listing-title-hoster {
+  display: flex;
+  justify-content: space-between;
 }
 
 .error-page-main {
@@ -353,10 +413,6 @@ a:hover {
   color: black;
 }
 
-h4 {
-  font-size: 18px;
-}
-
 body {
   margin: 0;
   display: flex;
@@ -375,6 +431,10 @@ h1 {
 h2 {
   font-size: 2.25em;
   font-weight: 500;
+}
+
+h4 {
+  font-size: 18px;
 }
 
 button {

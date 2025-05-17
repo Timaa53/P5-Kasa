@@ -2,6 +2,7 @@ import Header from '../../components/Header/Header'
 import Carousel from '../../components/Main/Logements/Carousel/Carousel'
 import ListingTitle from '../../components/Main/Logements/ListingHeader/ListingTitle'
 import ListingHoster from '../../components/Main/Logements/ListingHeader/ListingHoster'
+import ListingTags from '../../components/Main/Logements/ListingHeader/ListingTags'
 import Footer from '../../components/Footer/Footer'
 import {useParams} from 'react-router'
 
@@ -22,7 +23,7 @@ function Logements() {
                         <ListingHoster logementId={id} />
                     </div>
                     <div className="listing-tags-rating">
-                        {/* sqdqsdqsdqs */}
+                        <ListingTags logementId={id} />
                         {/* sqdqsdqsdqs */}
                     </div>
                 </section>
