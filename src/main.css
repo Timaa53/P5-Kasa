@@ -260,6 +260,12 @@ a:hover .logo {
   padding: 0 10px 0 10px;
 }
 
+.listing-rating {
+  display: flex;
+  width: auto;
+  height: 36px;
+}
+
 .footer {
   background-color: black;
   color: white;
@@ -362,6 +368,7 @@ a:hover .logo {
 .listing-tags-rating {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .error-page-main {
