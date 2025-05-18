@@ -359,6 +359,11 @@ a:hover .logo {
   justify-content: space-between;
 }
 
+.listing-tags-rating {
+  display: flex;
+  justify-content: space-between;
+}
+
 .error-page-main {
   width: 100%;
   display: flex;

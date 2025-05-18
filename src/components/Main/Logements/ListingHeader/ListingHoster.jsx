@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react'
+import {useState, useCallback} from 'react'
 import LogementsData from '../LogementsData'
 
 function ListingHoster({logementId}) {
