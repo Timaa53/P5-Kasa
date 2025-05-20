@@ -1,8 +1,11 @@
-import { useEffect, useState } from "react";
+import {useEffect, useState} from "react";
+import {useNavigate} from "react-router";
 
 
 function LogementsData({extractData = [], logementId, logementsDataFiltered}) {
     const [dataLogements, setDataLogements] = useState([]);
+    
+    const navigate = useNavigate();
 
     useEffect(() => {
         fetch("/logements.json")
@@ -19,6 +22,9 @@ function LogementsData({extractData = [], logementId, logementsDataFiltered}) {
             });
             setDataLogements(logementsFilters);
             if (logementsDataFiltered) logementsDataFiltered(logementsFilters);
+            if (logementsFilters.length === 0) {
+                navigate("/404");
+            }
         })
         .catch(error => console.error("Erreur appel fetch: ", error));
     }, [extractData, logementId]);
