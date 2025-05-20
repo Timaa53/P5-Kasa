@@ -4,6 +4,8 @@ import ListingTitle from '../../components/Main/Logements/ListingHeader/ListingT
 import ListingHoster from '../../components/Main/Logements/ListingHeader/ListingHoster'
 import ListingTags from '../../components/Main/Logements/ListingHeader/ListingTags'
 import ListingRating from '../../components/Main/Logements/ListingHeader/ListingRating'
+import ListingCollapse from '../../components/Main/Logements/LogementDetails/ListingCollapse'
+
 import Footer from '../../components/Footer/Footer'
 import {useParams} from 'react-router'
 
@@ -28,8 +30,23 @@ function Logements() {
                         <ListingRating logementId={id} />
                     </div>
                 </section>
-                
-                <h1>Test page logements</h1>   
+
+                <section className="logement-details">
+                    <article className="article-section">
+                        <ListingCollapse
+                        logementId={id}
+                        sectionName={"Description"}
+                        articleKey={"description"}
+                        />
+                    </article>
+                    <article className="article-section">
+                        <ListingCollapse
+                        logementId={id}
+                        sectionName={"Équipements"}
+                        articleKey={"equipments"}
+                        />
+                    </article>
+                </section> 
             </main>
             <Footer />
         </>

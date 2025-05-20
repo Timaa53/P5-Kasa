@@ -113,6 +113,25 @@ a:hover .logo {
   outline: none;
 }
 
+.collapse-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FF6060;
+  border-radius: 5px;
+  height: 54px;
+  padding: 0 20px 0 15px;
+  box-sizing: border-box;
+}
+
+.article-title {
+  width: 100%;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
 .logement-card {
   position: relative;
   width: 340px;
@@ -266,6 +285,22 @@ a:hover .logo {
   height: 36px;
 }
 
+.article-section .collapse-bar {
+  width: 582px;
+}
+
+.equipment-content {
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 0;
+  margin: 0;
+}
+
+.equipment-content li {
+  width: 100%;
+  list-style: none;
+}
+
 .footer {
   background-color: black;
   color: white;
@@ -319,28 +354,15 @@ a:hover .logo {
   box-sizing: border-box;
 }
 
-.section {
+.articles-section {
   width: 100%;
 }
 
-.section-bar {
+.collapse-bar {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #FF6060;
-  border-radius: 5px;
-  height: 54px;
-  padding: 0 20px 0 15px;
-  box-sizing: border-box;
 }
 
-.section-title {
-  width: 100%;
-  color: white;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
+.article-title {
   font-size: 24px;
 }
 
@@ -352,6 +374,7 @@ a:hover .logo {
   box-sizing: border-box;
   background-color: #f6f6f6;
   border-radius: 5px;
+  text-align: left;
 }
 
 .carousel {
@@ -369,6 +392,22 @@ a:hover .logo {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.article-title {
+  font-size: 18px;
+}
+
+.logement-details {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.article-section {
+  display: flex;
+  flex-direction: column;
+  width: 582px;
 }
 
 .error-page-main {
