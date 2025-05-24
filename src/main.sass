@@ -16,13 +16,14 @@
 @use "components/Main/Logements/ListingHeader/ListingTags" as *
 @use "components/Main/Logements/ListingHeader/ListingRating" as *
 @use "components/Main/Logements/LogementDetails/ListingCollapse" as *
-
 @use "components/Footer/Footer" as *
 
 @use "pages/Home/Home" as *
 @use "pages/About/About" as *
 @use "pages/Logement/Logement" as *
 @use "pages/Error404/Error404" as *
+
+@use "./styles/responsiveTools" as tools
 
 :root
     font-family: system-ui, Avenir, Helvetica, Arial, sans-serif
@@ -53,7 +54,7 @@ body
     font-family: Montserrat, sans-serif
 
 h1
-    font-size: 3.2em
+    font-size: clamp(24px, 5vw, 48px)
     line-height: 1.1
     color: black
 
