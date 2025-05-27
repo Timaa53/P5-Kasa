@@ -339,21 +339,6 @@ a:hover .logo {
   width: 100%;
 }
 
-@media screen and (min-width: 375px) and (max-width: 768px) {
-  .header {
-    width: 335px;
-    height: 46px;
-  }
-}
-.header a img {
-  width: 145px;
-  height: 47px;
-}
-.header nav ul {
-  width: 190px;
-  height: 17px;
-}
-
 .aboutpage-content {
   width: 100%;
   display: flex;
@@ -468,12 +453,6 @@ a:hover .logo {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-@media screen and (min-width: 375px) and (max-width: 768px) {
-  #root {
-    box-sizing: border-box;
-  }
 }
 
 a {
