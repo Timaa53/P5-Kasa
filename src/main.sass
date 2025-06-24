@@ -23,7 +23,8 @@
 @use "pages/Logement/Logement" as *
 @use "pages/Error404/Error404" as *
 
-@use "./styles/responsiveTools" as tools
+@use "./styles/responsiveTools/_responsiveMobile" as *
+@use "./styles/responsiveTools/_responsiveTablet" as *
 
 :root
     font-family: system-ui, Avenir, Helvetica, Arial, sans-serif
@@ -54,7 +55,7 @@ body
     font-family: Montserrat, sans-serif
 
 h1
-    font-size: clamp(24px, 5vw, 48px)
+    font-size: 3em
     line-height: 1.1
     color: black
 
