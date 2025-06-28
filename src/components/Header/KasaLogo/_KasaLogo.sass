@@ -1,3 +1,5 @@
+@use "../../../styles/responsiveTools/_responsiveMobile" as *
+
 .logo
   width: 210px
   height: 68px
@@ -7,3 +9,8 @@
 
 a:hover .logo
   filter: none
+
+@include mobile
+  .logo
+    width: 145px
+    height: 47px

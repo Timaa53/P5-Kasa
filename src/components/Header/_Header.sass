@@ -1,3 +1,5 @@
+@use "../../styles/responsiveTools/_responsiveMobile" as *
+
 .header
   display: flex
   justify-content: space-between
@@ -7,6 +9,10 @@
 
   nav
     height: 100%
+    display: flex
+    align-items: center
+    justify-content: end
+    width: 100%
 
 .nav-list
   display: flex
@@ -20,3 +26,10 @@
 
 .active
   text-decoration: underline
+
+@include mobile
+  .nav-list
+    gap: 15px
+
+  .header
+    height: 47px
