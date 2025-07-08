@@ -1,3 +1,5 @@
+@use "../../../../styles/responsiveTools/_responsiveMobile" as*
+
 .listingHoster
     display: flex
     height: 64px
@@ -14,3 +16,17 @@
     width: 64px
     height: 64px
     object-position: center
+
+@include mobile
+    .listingHoster
+        position: absolute
+        right: 20px
+        bottom: 455px
+
+        height: 33px
+    .listingHoster-name
+        font-size: 12px
+        font-weight: 500
+    .listingHoster-img
+        width: 32px
+        height: 32px

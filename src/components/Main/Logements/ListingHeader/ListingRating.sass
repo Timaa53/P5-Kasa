@@ -1,4 +1,11 @@
+@use "../../../../styles/responsiveTools/_responsiveMobile" as*
+
 .listing-rating
     display: flex
     width: auto
     height: 36px
+
+@include mobile
+    .listing-rating
+        height: 18px
+        padding: 10px 0 20px 0

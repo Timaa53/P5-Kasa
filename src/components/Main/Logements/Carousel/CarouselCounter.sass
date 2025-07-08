@@ -1,3 +1,5 @@
+@use "../../../../styles/responsiveTools/_responsiveMobile" as*
+
 .carousel-counter
     position: absolute
     bottom: 0
@@ -5,3 +7,7 @@
     font-weight: 500
     font-size: 18px
     width: 100%
+
+@include mobile
+    .carousel-counter
+        display: none

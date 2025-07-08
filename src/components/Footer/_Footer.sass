@@ -1,3 +1,5 @@
+@use "../../styles/responsiveTools/_responsiveMobile" as*
+
 .footer
     background-color: black
     color: white
@@ -23,3 +25,8 @@
         font-weight: 500
         width: auto
         height: 46px
+
+@include mobile
+    .footer p
+        font-size: 12px
+        max-width: 121px

@@ -1,3 +1,5 @@
+@use "../../styles/responsiveTools/_responsiveMobile" as*
+
 .error-page-main
     width: 100%
     display: flex
@@ -25,3 +27,12 @@
     font-weight: 500
     font-size: 18px
     margin: 139px 0 0 0
+
+@include mobile
+    .error-number
+        font-size: 96px
+        margin: 0
+    .error-page-main
+        padding: 50px
+    .error-text
+        padding-bottom: 50px
