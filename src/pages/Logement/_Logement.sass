@@ -5,14 +5,21 @@
     height: 415px
     margin-bottom: 20px
 
-.listing-title-hoster
+.listing-header
     display: flex
     justify-content: space-between
 
-.listing-tags-rating
+.listing-title-tags
     display: flex
+    flex-direction: column
+
+.listing-hoster-rating
+    display: flex
+    flex-direction: column
     justify-content: space-between
     align-items: center
+    padding-bottom: 10px
+    max-height: 133px
 
 .article-title
     font-size: 18px
@@ -35,8 +42,12 @@
     .article-section
         padding-bottom: 20px
         width: 100%
-    .listing-tags-rating
-        align-items: flex-start
+    .listing-header
         flex-direction: column
+    .listing-hoster-rating
+        align-items: flex-start
+        flex-direction: row-reverse
     .article-title
         font-size: 13px
+    .collapse-text
+        font-size: 14px

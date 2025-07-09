@@ -19,18 +19,16 @@ function Logements() {
                 <section className="carousel">
                     <Carousel logementId={id} />
                 </section>
-
                 <section className="listing-header">
-                    <div className="listing-title-hoster">
+                    <div className="listing-title-tags">
                         <ListingTitle logementId={id} />
-                        <ListingHoster logementId={id} />
-                    </div>
-                    <div className="listing-tags-rating">
                         <ListingTags logementId={id} />
+                    </div>
+                    <div className="listing-hoster-rating">
+                        <ListingHoster logementId={id} />
                         <ListingRating logementId={id} />
                     </div>
                 </section>
-
                 <section className="logement-details">
                     <article className="article-section">
                         <ListingCollapse

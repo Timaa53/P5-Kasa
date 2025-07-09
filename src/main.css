@@ -227,7 +227,7 @@ a:hover .logo {
   }
 }
 .carousel-content {
-  width: 1240px;
+  width: auto;
   height: 100%;
   overflow: hidden;
   position: relative;
@@ -349,9 +349,6 @@ a:hover .logo {
 
 @media screen and (max-width: 768px) {
   .listingHoster {
-    position: absolute;
-    right: 20px;
-    bottom: 455px;
     height: 33px;
   }
   .listingHoster-name {
@@ -381,7 +378,7 @@ a:hover .logo {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 10px 0 10px;
+  padding: 0 10px;
 }
 
 @media screen and (max-width: 768px) {
@@ -390,6 +387,11 @@ a:hover .logo {
   }
   .logement-tags p {
     font-size: 10px;
+    padding: 0;
+  }
+  .logement-tags {
+    gap: 5px;
+    flex-wrap: wrap;
   }
 }
 .listing-rating {
@@ -499,6 +501,9 @@ a:hover .logo {
   .about-sections {
     padding: 0;
   }
+  .collapse-text {
+    font-size: 14px;
+  }
 }
 .carousel {
   width: 100%;
@@ -506,15 +511,23 @@ a:hover .logo {
   margin-bottom: 20px;
 }
 
-.listing-title-hoster {
+.listing-header {
   display: flex;
   justify-content: space-between;
 }
 
-.listing-tags-rating {
+.listing-title-tags {
   display: flex;
+  flex-direction: column;
+}
+
+.listing-hoster-rating {
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 10px;
+  max-height: 133px;
 }
 
 .article-title {
@@ -544,12 +557,18 @@ a:hover .logo {
     padding-bottom: 20px;
     width: 100%;
   }
-  .listing-tags-rating {
-    align-items: flex-start;
+  .listing-header {
     flex-direction: column;
+  }
+  .listing-hoster-rating {
+    align-items: flex-start;
+    flex-direction: row-reverse;
   }
   .article-title {
     font-size: 13px;
+  }
+  .collapse-text {
+    font-size: 14px;
   }
 }
 .error-page-main {
