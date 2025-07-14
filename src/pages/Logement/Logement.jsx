@@ -8,9 +8,14 @@ import ListingCollapse from '../../components/Main/Logements/LogementDetails/Lis
 
 import Footer from '../../components/Footer/Footer'
 import {useParams} from 'react-router'
+import { useEffect } from 'react'
 
 function Logements() {
     const {id} = useParams();
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     return(
         <>

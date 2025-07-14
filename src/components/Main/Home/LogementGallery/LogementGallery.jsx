@@ -11,7 +11,7 @@ function Gallery() {
     })
     return(
         <section className="gallery-logements">
-            {logements.slice(0, 6).map((logement) =>(
+            {logements.slice(0, 20).map((logement) =>(
                 <Card logement={logement} key={logement.id} />
             ))}
         </section>

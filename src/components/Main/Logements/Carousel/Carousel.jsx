@@ -25,14 +25,19 @@ function Carousel({logementId}) {
                     />
                 )}
 
-                <CarouselBtn
-                setCurrentIndex={setCurrentIndex}
-                carouselImages={logementImg[0]?.pictures?.length}
-                />
-                <CarouselCounter
-                currentIndex={currentIndex}
-                carouselImages={logementImg[0]?.pictures.length}
-                />
+                {logementImg[0]?.pictures?.length > 1 && (
+                <>
+                    <CarouselBtn
+                    setCurrentIndex={setCurrentIndex}
+                    carouselImages={logementImg[0]?.pictures?.length}
+                    />
+
+                    <CarouselCounter
+                    currentIndex={currentIndex}
+                    carouselImages={logementImg[0]?.pictures.length}
+                    />
+                </>
+                )}
             </div>            
         </>
     )
