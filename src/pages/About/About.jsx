@@ -2,13 +2,14 @@ import Header from '../../components/Header/Header'
 import Banner from '../../components/Main/Banner/Banner'
 import Footer from '../../components/Footer/Footer'
 import Collapse from '../../components/Main/Collapse/Collapse'
+import BannerAbout from '../../assets/images/Banner_about.png'
 
 function About () {
     return (
         <>
         <Header />
         <main className="aboutpage-content">
-            <Banner image="../../../src/assets/images/Banner_about.png" textBanner="" />
+            <Banner image={BannerAbout} textBanner="" />
             <section className="about-sections">
                 <article className="articles-section">
                     <Collapse sectionName="Fiabilité">
