@@ -38,7 +38,7 @@ function Carousel({logementId}) {
                     />
                 </>
                 )}
-            </div>            
+            </div>
         </>
     )
 }
